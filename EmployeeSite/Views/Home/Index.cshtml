@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="bannerWelcome ">
+    <h1>Welcome to enterprise A</h1>
+</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/meeting-enterprise.jpg" alt="meeting" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Meeting between our enterprise & enterprise X
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/Team building.jpg" alt="Team building" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Team building scheduled on 25 mars 2019, sign in !
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="~/images/Poll.jpg" alt="Poll" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    Poll of the month, give us your thoughts !
+                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="padding-top-20 image-home">
+    <div class="col-md-6">
+
+        <img src="~/images/chart home.jpg" alt="chart 1" class="img-responsive" />
+        <p>
+            Sells of the month on our new product A to F click to know more
+        </p>
+        @Html.ActionLink("know more !", "About", "Home", null, new { @class = "btn btn-info" }) 
+    </div>
+
+    <div class="col-md-6">
+
+        <img src="~/images/Yammer logo.jpg" alt="yammer logo" class="img-responsive" />
+        <p>
+            Join Yammer to stay connected with us
+        </p>
+        <a class="btn btn-info" href="http://someurl.com">Connect yourself !</a>
+
+    </div>
+</div>
+<div class="text-center padding-top-20">
+    <div class="col-md-6">
+        <h2> Upcoming events</h2>
+        <div class="forum">
+            <img src="~/images/Stock-RH.jpg" alt="yammer logo" class="img-responsive" />
+            <p>We will have a new colleague starting on the 12 may 2018, he will join the team of Christophe Lambert.</p>
+            <span>05/05/18 16:23</span>
+        </div>
+        <div class="forum">
+            <img src="~/images/Stock-RH.jpg" alt="yammer logo" class="img-responsive" />
+            <p>Hello, dont forget the team launch tomorrow</p>
+            <span>04/05/18 14:15</span>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <h2> On the Forum</h2>
+        <div class="forum">
+            <img src="~/images/stock-young-woman.jpg" alt="yammer logo" class="img-responsive" />
+            <p>Today i was working on product A and something happen.. Can you please help me ?</p>
+            <span>07/05/18 11:18</span>
+        </div>
+        <div class="forum">
+            <img src="~/images/stock-young-man.jpg" alt="yammer logo" class="img-responsive" />
+            <p>We got new informations about the next product can we set a meeting to schedule the next objectives ?</p>
+            <span>07/05/18 10:37</span>
+        </div>
+    </div>
+</div>
+

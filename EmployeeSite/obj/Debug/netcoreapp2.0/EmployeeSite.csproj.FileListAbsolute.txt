@@ -1,0 +1,12 @@
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\bin\Debug\netcoreapp2.0\EmployeeSite.deps.json
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\bin\Debug\netcoreapp2.0\EmployeeSite.runtimeconfig.json
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\bin\Debug\netcoreapp2.0\EmployeeSite.runtimeconfig.dev.json
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\bin\Debug\netcoreapp2.0\EmployeeSite.dll
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\bin\Debug\netcoreapp2.0\EmployeeSite.pdb
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\EmployeeSite.csprojResolveAssemblyReference.cache
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\EmployeeSite.csproj.CoreCompileInputs.cache
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\EmployeeSite.AssemblyInfoInputs.cache
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\EmployeeSite.AssemblyInfo.cs
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\EmployeeSite.dll
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\EmployeeSite.pdb
+D:\ProjetInfo\MVCProjetEmployee\EmployeeSite\EmployeeSite\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

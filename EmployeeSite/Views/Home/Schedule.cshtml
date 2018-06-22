@@ -1,0 +1,75 @@
+﻿@using EmployeeSite.ViewModels
+@using System.Globalization
+
+@model ScheduleViewModel
+
+<div id="app">
+    <div class="app-description">
+    </div>
+    <div class="calendar">
+        <div class="dayList">
+
+            @foreach (DayOfWeek day in Model.DaysOfWeek)
+            {
+                <div class="day">@day.ToString()</div>
+            }
+
+        </div>
+        <div class="week">
+            <div class="hourList">
+                <div class="hours">
+
+                    @for (int i = 0; i < 24; i++)
+                    {
+                        <div class="hour">@i.ToString():00</div>
+                    }
+
+                </div>
+            </div>
+            <div class="days">
+                @{
+                    foreach (DayOfWeek day in Model.DaysOfWeek)
+                    {
+                        <div class="dayHours">
+                            @for (int i = 0; i < 24; i++)
+                            {
+                                <div class="dayHour"></div>
+                            }
+
+                            @if (Model.Events.ContainsKey(day))
+                            {
+                                foreach (Event e in Model.Events[day])
+                                {
+                                    <div class="event" style=@GetEventStyle(e)>
+                                        <h4 class="time">@e.DateStart.TimeOfDay - @e.DateEnd.TimeOfDay</h4>
+                                        <p class="descrition">@e.EventName</p>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@functions
+{
+public string GetEventStyle(Event e)
+{
+    string result = string.Format("top:{0}px;height:{1}px",
+                                    GetTop(e.DateStart),
+                                    GetHeight(e));
+    return result;
+}
+public String GetTop(DateTime dateStart)
+{
+    return (dateStart.Hour * 32.3 + dateStart.Minute / 60.0 * 32.3).ToString(CultureInfo.InvariantCulture);
+}
+
+public String GetHeight(Event duration)
+{
+    return (duration.HourDuration * 32.3 + duration.MinuteDuration / 60.0 * 32.3).ToString(CultureInfo.InvariantCulture);
+}
+}
